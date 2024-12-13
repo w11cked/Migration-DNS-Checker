@@ -8,8 +8,8 @@ init(autoreset=True)
 dateiname = "domains.txt"
 
 # IP-Adressen
-new_ip = "188.34.138.254"  # Neuer DNS
-old_ip = "188.40.109.176"  # Alter DNS
+new_ip = "172.30.30.1"  # Neuer DNS
+old_ip = "10.10.0.7"  # Alter DNS
 
 # Ergebnisliste initialisieren
 results = []
@@ -18,8 +18,7 @@ results = []
 with open(dateiname, "r") as f:
     domains = [line.strip() for line in f if line.strip() and not line.startswith("#")]
 print(f"{Fore.RED}----------------------------------------------------------------------------------------------")
-print(f"{Fore.GREEN}IT4REAL DNS-Checker")
-
+print(f"{Fore.GREEN}DNS-Checker by w11cked")
 print(f"{Fore.RED}----------------------------------------------------------------------------------------------")
 print(f"{Fore.MAGENTA}Python 3.12 + Pandas 2.2.3")
 print(f"{Fore.RED}----------------------------------------------------------------------------------------------")
