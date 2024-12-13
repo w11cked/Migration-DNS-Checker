@@ -14,6 +14,7 @@ old_ip = "10.10.0.7"  # Alter DNS
 # Ergebnisliste initialisieren
 results = []
 
+
 # Domains aus Datei lesen
 with open(dateiname, "r") as f:
     domains = [line.strip() for line in f if line.strip() and not line.startswith("#")]
