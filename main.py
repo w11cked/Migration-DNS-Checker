@@ -18,7 +18,7 @@ results = []
 with open(dateiname, "r") as f:
     domains = [line.strip() for line in f if line.strip() and not line.startswith("#")]
 print(f"{Fore.RED}----------------------------------------------------------------------------------------------")
-print(f"{Fore.GREEN}IT4REAL DNS-Cheker")
+print(f"{Fore.GREEN}IT4REAL DNS-Checker")
 
 print(f"{Fore.RED}----------------------------------------------------------------------------------------------")
 print(f"{Fore.MAGENTA}Python 3.12 + Pandas 2.2.3")
