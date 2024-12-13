@@ -14,15 +14,15 @@ old_ip = "10.10.0.7"  # Alter DNS
 # Ergebnisliste initialisieren
 results = []
 
-
-# Domains aus Datei lesen
-with open(dateiname, "r") as f:
-    domains = [line.strip() for line in f if line.strip() and not line.startswith("#")]
 print(f"{Fore.RED}----------------------------------------------------------------------------------------------")
 print(f"{Fore.GREEN}DNS-Checker by w11cked")
 print(f"{Fore.RED}----------------------------------------------------------------------------------------------")
 print(f"{Fore.MAGENTA}Python 3.12 + Pandas 2.2.3")
 print(f"{Fore.RED}----------------------------------------------------------------------------------------------")
+
+# Domains aus Datei lesen
+with open(dateiname, "r") as f:
+    domains = [line.strip() for line in f if line.strip() and not line.startswith("#")]
 # DNS-Abfrage durchführen
 for domain in domains:
     try:
